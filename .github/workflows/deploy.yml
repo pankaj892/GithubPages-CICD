@@ -36,12 +36,6 @@ jobs:
     - name: Deploy to Github Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      # with:
-      #   branch: main
-      #   folder: .
-
-      # env:
-      #   GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-
+     
     outputs:
       url: ${{ steps.deployment.outputs.url }}
