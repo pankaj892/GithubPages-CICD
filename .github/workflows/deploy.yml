@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       
     - name: Setup Pages
       uses: actions/configure-pages@v5
@@ -40,8 +40,8 @@ jobs:
       #   branch: main
       #   folder: .
 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+      # env:
+      #   GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
 
     outputs:
       url: ${{ steps.deployment.outputs.url }}
